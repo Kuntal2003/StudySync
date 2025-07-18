@@ -231,3 +231,62 @@ body {
     }
 }
 /* Hero section end */
+
+/* company-container Start*/
+.company-container{
+    max-width: 1280px;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    gap: 2rem;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+    margin-bottom: 2rem;
+}
+.company-container-title{
+    color: var(--text-color); 
+    font-weight: 700;
+}
+.company-container-company{
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 auto;
+    background-color: var(--light-gray);
+    padding: 1.5rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    
+}
+.company-container-company .icon{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.google,.microsoft,.linkedin,.VectorEdu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    font-weight: 600;
+    color: var(--gray);
+}
+.VectorEdu{
+    padding-right: 0rem;
+}
+@media  screen and (max-width: 930px) {
+    .company-container-company{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+    
+}
+@media  screen and (max-width: 568px) {
+    .company-container-company{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        justify-self: center;
+        max-width: 100%;
+    }
+    
+}
+/* company-container End */
+
